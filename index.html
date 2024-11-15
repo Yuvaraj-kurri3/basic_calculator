@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+    <div class="light-dark">
+        <button id="change_mode" onclick="mode()">light</button>
+    </div>
+   <div class="heading">
+    <h3 id="bc">Basic Calculator</h3>
+   </div>
+    
+    <div id="main-cont">
+        <div id="final-res">
+            <div class="res-op">
+                <p id="res"></p>
+            </div>
+        </div>
+        <div class="keys">
+            <button onclick="clearResult()"   style="background-color: rgb(255, 115, 0);"  id="btn">AC</button>
+            <button onclick="appendValue('/')"  style="background-color: rgb(255, 115, 0);" id="btn">/</button>
+            <button onclick="backspace()"   style="background-color: rgb(255, 115, 0);" id="btn">←</button>
+            <button onclick="appendValue('%')"  style="background-color: rgb(255, 115, 0);" id="btn">%</button>
+        </div>
+        <div class="keys">
+            <button onclick="appendValue('7')" id="btn">7</button>
+            <button onclick="appendValue('8')" id="btn">8</button>
+            <button onclick="appendValue('9')" id="btn">9</button>
+            <button onclick="appendValue('*')" style="background-color: rgb(255, 115, 0);" id="btn" >X</button>
+        </div>
+        <div class="keys">
+            <button onclick="appendValue('4')" id="btn">4</button>
+            <button onclick="appendValue('5')" id="btn">5</button>
+            <button onclick="appendValue('6')" id="btn">6</button>
+            <button onclick="appendValue('-')"  style="background-color: rgb(255, 115, 0);" id="btn">-</button>
+        </div>
+        <div class="keys">
+            <button onclick="appendValue('1')" id="btn">1</button>
+            <button onclick="appendValue('2')" id="btn">2</button>
+            <button onclick="appendValue('3')" id="btn">3</button>
+            <button onclick="appendValue('+')"  style="background-color: rgb(255, 115, 0);" id="btn">+</button>
+        </div>
+        <div class="keys">
+            <button onclick="appendValue('00')" id="btn">00</button>
+            <button onclick="appendValue('0')" id="btn">0</button>
+            <button onclick="appendValue('.')" id="btn">.</button>
+            <button onclick="calculate()"  style="background-color: rgb(255, 115, 0);" id="btn">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
