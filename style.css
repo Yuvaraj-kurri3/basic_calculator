@@ -24,6 +24,8 @@ body{
         border-top-left-radius: 0.5;
         margin-left: 0;
         margin-right: 0;
+        justify-content: flex-end;
+        overflow: hidden;
 
     }
     .keys{
